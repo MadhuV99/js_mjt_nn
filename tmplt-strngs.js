@@ -1,0 +1,25 @@
+// template strings 
+const title = 'Best reads of 2022';
+const author = 'Madhu';
+const likes = 30;
+
+// concatenation way 
+let result = 'The blog called ' + title + ' by ' + author + ' has ' + likes + ' likes';
+console.log(result);
+
+// template string way 
+result = `The blog called ${title} by ${author} has ${likes} likes`;
+console.log(result);
+
+// create HTML templates
+let html =  `
+    <h2>${title}</h2>
+    <p>By {author}</p>
+    <span>This blog has ${likes} likes</span>
+`;
+console.log(html);
+
+
+    
+
+
